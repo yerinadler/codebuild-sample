@@ -1,0 +1,13 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to AWS ECR
+      - docker ps
+  build:
+    commands:
+      - echo Building
+  post_build:
+    commands:
+      - echo Finished build
+      - docker ps
