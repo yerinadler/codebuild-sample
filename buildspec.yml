@@ -3,6 +3,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to AWS ECR
+      - ls -lah
       - docker ps
   build:
     commands:
